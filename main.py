@@ -4,7 +4,7 @@ import openai
 
 load_dotenv()
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv(st.secrets("OPENAI_API_KEY"))
 
 import streamlit as st 
 from langchain.llms import OpenAI
