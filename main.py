@@ -1,15 +1,10 @@
-from dotenv import load_dotenv
-import os
 import openai
-
 import streamlit as st 
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain 
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
-
-load_dotenv()
 
 openai.api_key = st.secrets["api_key"]
 
