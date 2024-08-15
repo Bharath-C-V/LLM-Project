@@ -11,7 +11,7 @@ from langchain.utilities import WikipediaAPIWrapper
 
 load_dotenv()
 
-openai.api_key = st.secrets["openai"]["api_key"]
+openai.api_key = st.secrets["api_key"]
 
 st.title('BCV GPT')
 prompt = st.text_input('Give in your prompt here')
